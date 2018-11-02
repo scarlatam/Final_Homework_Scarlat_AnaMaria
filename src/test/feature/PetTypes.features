@@ -1,0 +1,11 @@
+Feature: GET request and POST request and PUT request and and UPDATE request DELETE request
+
+  Scenario: User calls web services in order to add a new PET TYPES
+    Given I open Pet Types page
+    When I perform POST request to pettypes
+    Then I click on Home
+
+  Scenario: User calls web service in order to edit a new PET TYPES
+    Given I am on Pet Type page
+    When I edit the new pet type
+    Then I go on Home Page

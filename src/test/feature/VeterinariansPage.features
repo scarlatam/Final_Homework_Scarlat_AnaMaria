@@ -1,0 +1,21 @@
+Feature: GET request and POST request and PUT request and and UPDATE request DELETE request
+
+Scenario: User calls web services in order to get all veterinarians
+Given I open Welcome Page
+When Click on all veterinarians
+Then I press the button Home
+
+Scenario: User calls web services in order to add a new veterinarians
+Given I open New veterinarians Page
+When I add a new veterinarians
+Then I assert if the new veterinarians is present
+
+Scenario: User calls web services in order to edit a new veterinarians
+Given I open Veterinarians Page
+When I check if the veterinarians is present
+Then I edit the new veterinarians
+
+Scenario: User calls web services in order to delete request
+Given I open Veterinarians Page to delete request
+When I find the new veterinarians
+Then I delete the new veterinarians

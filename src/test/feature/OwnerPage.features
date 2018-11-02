@@ -1,0 +1,17 @@
+Feature: GET request and POST request and PUT request and and UPDATE request DELETE request
+
+  Scenario: User calls web services in order to GET all owners
+    Given I am on Welcome Page
+    When I click on Owners
+    Then I will receive all owners
+
+  Scenario: User calls web services in order to add new owner
+    Given I open all owners
+    When I click on Add New Owner
+    And check if it is present
+    Then I edit the new owner and save
+
+  Scenario: User calls web services in order to add new pet to owner
+    Given I open Owners
+    When I add new pet to new owner
+    Then I click on back

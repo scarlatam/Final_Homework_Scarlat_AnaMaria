@@ -1,0 +1,11 @@
+Feature: GET request and POST request and PUT request and and UPDATE request DELETE request
+
+        Scenario: User calls web services in order to add a new SPECIALTY
+          Given I open Speciality page
+          When I add a new spectialty
+          Then I back at Home
+
+        Scenario: User calls web services in order to EDIT a specialty
+          Given Open the Specialty page
+          When I edit a specialty
+          Then I click on Home Page
