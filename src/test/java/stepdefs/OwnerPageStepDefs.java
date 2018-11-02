@@ -137,8 +137,8 @@ public class OwnerPageStepDefs {
         owners.click();
         allOwners = webDriver.findElement(By.xpath("//a[text()[contains(.,'Owners')]]//parent::li//span[text()[contains(.,'All')]]"));
         allOwners.click();
-        checkowner = webDriver.findElement(By.xpath("//a[text()[contains(.,'Ana Maria')]]"));
-        assertTrue(checkowner.getText().contains("Ana Maria"));
+        checkowner = webDriver.findElement(By.xpath("//a[text()[contains(.,'AnaTest Maria')]]"));
+        assertTrue(checkowner.getText().contains("AnaTest Maria"));
         checkowner.click();
         Thread.sleep(2000);
         addNewPet = webDriver.findElement(By.xpath("//button[text()[contains(.,'Add New Pet')]]"));
@@ -147,7 +147,7 @@ public class OwnerPageStepDefs {
         namePet.sendKeys("Veta");
         birthDate = webDriver.findElement(By.xpath("/html/body/app-root/app-pet-add/div/div/form/div[4]/input"));
         birthDate.sendKeys("2017/12/25");
-        petType = webDriver.findElement(By.xpath("//select/option[text()[contains(.,'bront')]]"));
+        petType = webDriver.findElement(By.xpath("//select/option[text()[contains(.,'hams')]]"));
         petType.click();
         savePet =  webDriver.findElement(By.xpath("//button[text()[contains(.,'Save Pet')]]"));
         savePet.click();
